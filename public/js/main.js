@@ -1,6 +1,12 @@
 (function ($) {
     "use strict";
 
+    $(window).on('load', function() {
+        setTimeout(function() {
+            $('#loading-screen').fadeOut();
+        }, 2000);
+    });
+    
     // Navbar on scrolling
     $(window).scroll(function () {
         if ($(this).scrollTop() > 200) {
