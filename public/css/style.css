@@ -70,7 +70,8 @@ body {
   line-height: 1.5;
   color: #515358;
   text-align: left;
-  background-color: #b9f7ee;
+  background-color: #e0f3f0;
+  user-select: none;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -11121,4 +11122,117 @@ a.text-dark:focus {
   justify-content: center;
   align-items: center;
   z-index: 9999;
+}
+
+
+
+/* wedding details */
+
+.wedding-card {
+  background-color: #fafcfd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  display: flex;
+  justify-content: space-around !important;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  gap:5em;
+  flex-wrap: wrap;
+
+}
+
+.wedding-info-container{
+  justify-content: space-between !important;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  flex-basis: 33.33%;
+  align-items: center;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+.wedding-details p{
+  text-align: justify;
+}
+
+.wedding-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+
+  align-items: center;
+
+}
+
+.wedding-title{
+  text-align: center;
+  font-family: var(--font-family-monospace);
+  text-transform: uppercase;
+  font-size: medium;
+  color: #0E2521;
+}
+.wedding-images {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.wedding-images img{
+  height: 150px;
+}
+
+.wedding-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.wedding-payment-container{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.wedding-payment-container p{
+  text-align: left;
+}
+
+@media screen and (max-width: 1000px) {
+  .wedding-card{
+    flex-direction: column;
+
+  }
+  .wedding-content {
+      flex-direction: row;
+      text-align: left;
+      align-items: center;
+  }
+
+  .wedding-details {
+      max-width: 50%;
+  }
+
+  .wedding-images {
+      max-width: 50%;
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 18px; /* Ancho del scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff; /* Color de fondo del scrollbar */
+  border-radius: 10px; /* Border-radius mínimo */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0E2521; /* Color de la barra de desplazamiento */
+  border-radius: 10px; /* Border-radius mínimo */
+  border: 2px solid #ffffff; /* Añade un borde blanco alrededor del thumb */
 }
