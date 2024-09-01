@@ -11148,10 +11148,9 @@ a.text-dark:focus {
   display: flex;
   flex-direction: column;
   height: 50vh;
+  width: 100%;
   flex-basis: 33.33%;
   align-items: center;
-  margin: 10px;
-  margin-top: 20px;
 }
 
 .wedding-details p{

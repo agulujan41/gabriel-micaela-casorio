@@ -121,3 +121,20 @@
     
 })(jQuery);
 
+
+
+document.getElementById('whatsapp-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    var name = encodeURIComponent(document.getElementById('user-name').value.trim());
+    var message = encodeURIComponent(document.getElementById('user-message').value.trim());
+    
+    if (name && message) {
+        var whatsappMessage = `Hola Rut, soy ${name} quiero *confirmar mi asistencia* a la boda de Gabriel y Micaela.\n${message}`;
+        var whatsappURL = `https://api.whatsapp.com/send?phone=543874400230&text=${whatsappMessage}`;
+        
+        window.open(whatsappURL, '_blank');
+    } else {
+        alert('Por favor, completa todos los campos.');
+    }
+});
